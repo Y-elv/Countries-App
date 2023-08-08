@@ -40,7 +40,7 @@ function Home() {
         .then((data) => setData(data), setData2(data))
         .catch((err) => console.log("Error:", err.message));
     }
-  }, [selectInput,data]);
+  }, [selectInput]);
 
   const handleChangeSelect = (e) => {
     setSelectInput(e.target.value);
