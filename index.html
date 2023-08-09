@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
- 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Country searcher</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script
-      type="module"
-      src="/src/index.jsx"
-    ></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Searcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Country App</h1>
+  </div> 
+  <div class="container">
+    <div class="form-control">
+        <input type="text" placeholder="" class="search">
+        <i class="fas fa-search search"></i>
+    </div>
+    <div class="dropDownCon">
+        <div class="dropDown">
+            <p>Select By Continent</p>
+            <button><i class="fas fa-chevron-down"></i></button>
+      </div>
+        <div class="drop showDropDown">
+            <p class="region">All</p>
+            <p class="region">Africa</p>
+            <p class="region">America</p>
+            <p class="region">Asia</p>
+            <p class="region">Europe</p>
+            <p class="region">Oceania</p>
+        </div>
+    </div>
+  </div> 
+  <div class="countries">
+   
+  </div>
+  <script src="./index.js"></script>
+</body>
 </html>
